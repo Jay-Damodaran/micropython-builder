@@ -9,8 +9,6 @@ sudo apt install ninja-build
 sudo apt install libusb-1.0-0-dev
 sudo apt install gcc-arm-none-eabi
 
-mkdir pico
-cd pico
 git clone https://github.com/micropython/micropython.git
 git clone https://github.com/v923z/micropython-ulab.git ulab
 
