@@ -25,8 +25,11 @@ git clone https://github.com/micropython/micropython micropython || git -C micro
 git -C micropython checkout v1.24.0
 
 cd micropython
-git submodule update --init
-cd ..
+git submodule update --init lib/tinyusb
+git submodule update --init lib/pico-sdk
+cd lib/pico-sdk
+git submodule update --init lib/tinyusb
+cd ../../..
 
 
 # only check out micropython-lib, if it is not available locally, otherwise, pull
